@@ -1,16 +1,29 @@
 import React from 'react';
+import TweetBox from './TweetBox';
+import Post from './Post';
 import './Feed.css';
+
 
 function Feed() {
     return (
-        <div>
+        <div className='feed'>
             {/*Header*/}
-            <div className='feed'>
-             <h2>Home</h2>   
+            <div className='feed_header'>
+                <h2>Home</h2>
             </div>
-            
+
             {/*Tweetbox*/}
+            <TweetBox />
+
             {/*Post*/}
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
             {/*Post*/}
             {/*Post*/}
             {/*Post*/}
@@ -24,4 +37,4 @@ function Feed() {
     );
 }
 
-export default Feed
+export default Feed;
