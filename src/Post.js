@@ -30,8 +30,8 @@ function Post({
                         <p>Having a blast on vacation rn. Idk if I want to go back to work.</p>
                     </div>
                 </div>
-                <img src='https://www.thoughtfulcode.com/wp-content/uploads/2019/01/rubber-duck-debugging-and-psychology-sunglassed-rubber-duck.jpg'
-                    alt='' />
+                {/* <img src='https://media.tenor.com/KEwMALPQKg4AAAAC/giant-rubber-ducky-omg.gif'
+                    alt='' /> */}
                 <div className='post_footer'>
                     <ChatBubbleOutline fontSize='small' />
                     <Repeat fontSize='small' />
