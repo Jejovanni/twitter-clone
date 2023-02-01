@@ -4,7 +4,7 @@ import './Post.css';
 import { ChatBubbleOutline, FavoriteBorder, Publish, Repeat, VerifiedUserRounded } from '@mui/icons-material';
 
 function Post({
-    displaName,
+    displayName,
     username,
     verified,
     text,
@@ -14,24 +14,24 @@ function Post({
     return (
         <div className='post'>
             <div className='post_avatar'>
-                <Avatar src='https://www.daysoftheyear.com/wp-content/uploads/rubber-duckie-day-1.jpg' />
+                <Avatar src={avatar} />
             </div>
             <div className='post_body'>
                 <div className='post_header'>
                     <div className='post_headerText'>
                         <h3>
-                            Jejovanni{" "}
+                            {displayName}{" "}
                             <span className='post_headerSpecial'>
-                                <VerifiedUserRounded className='post_badge' /> @duckdev
+                                {verified && <VerifiedUserRounded className='post_badge' />} @{username}
                             </span>
                         </h3>
                     </div>
                     <div className='post_headerDescription'>
-                        <p>Having a blast on vacation rn. Idk if I want to go back to work.</p>
+                        <p>{text}</p>
                     </div>
                 </div>
-                {/* <img src='https://media.tenor.com/KEwMALPQKg4AAAAC/giant-rubber-ducky-omg.gif'
-                    alt='' /> */}
+                <img src={image}
+                    alt='' />
                 <div className='post_footer'>
                     <ChatBubbleOutline fontSize='small' />
                     <Repeat fontSize='small' />
